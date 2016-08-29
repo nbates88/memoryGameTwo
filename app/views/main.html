@@ -1,0 +1,15 @@
+<div>
+<div class="head">
+  <h1 class="main-header">Memory Game</h1>
+  <button class="btn btn-success center-block" ng-Click="newGameOnClick()">Start A New Game</button>
+</div>
+  <div class="flex-container">
+    <div class="cards" ng-repeat="card in cards track by $index">
+      <div class="card" ng-class='card.class' ng-click="cardOnClick(card.path, $index)">
+          <div class="front"><img class="cardfront" height="200" width="150"></div>
+          <div class="back"><img ng-class="card.path" height="200" width="150"></div>
+      </div>
+    </div>
+  </div>
+</div>
+

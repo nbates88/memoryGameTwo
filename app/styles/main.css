@@ -1,0 +1,138 @@
+
+body {
+  padding: 0;
+}
+
+.head{
+  margin-bottom: 20px;
+}
+
+.main-header{
+  width: 30%;
+  margin: 0 auto;
+  padding: 2%;
+  text-align: center;
+}
+
+.cardfront{
+  content: url("../images/playing-card-back.jpg");
+}
+
+.card2{
+   content: url("../images/2.png");
+}
+.card3{
+   content: url("../images/3.png");
+}.card4{
+   content: url("../images/4.png");
+}.card5{
+   content: url("../images/5.png");
+}.card6{
+   content: url("../images/6.png");
+}.card7{
+   content: url("../images/7.png");
+}.card8{
+   content: url("../images/8.png");
+}.card9{
+   content: url("../images/9.png");
+}
+.card10{
+   content: url("../images/10.png");
+}
+
+.flex-container{
+    background-image: url("../images/wood.jpg");
+    padding: 25px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    border-radius: 10px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 85%;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+.cards{
+
+  margin: 11px;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+  height: 200px;
+  width: 150px;
+  position: relative;
+
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.disable{
+  pointer-events: none;
+  opacity: .5;
+}
+
+.card div {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+}
+
+.card .front {
+  height: 200px;
+  width: 150px;
+  z-index: 2;
+  border-radius: 5px;
+}
+
+.card .back {
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+
+.jumbotron {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
